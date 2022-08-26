@@ -3,7 +3,7 @@ import { Function, StackContext } from "@serverless-stack/resources";
 export default function MyStack({ stack }: StackContext) {
 
   const fn = new Function(stack, "fn", {
-    handler: "src/lambda.main",
+    handler: "functions/lambda.handler",
     url: true,
   });
 
